@@ -1,0 +1,30 @@
+video{
+    width: 400px;
+    height: 250px;
+  transform: rotateX(50deg);
+}
+
+.forma { width:90px; 
+    height:90px;
+     background:#17689a;
+  border-radius:50%;
+   margin:36px; 
+   transform: rotateX(50deg);
+
+}
+
+.forma:hover, .forma:focus-visible { background:#80429d; }
+@media (prefers-reduced-motion: no-preference) {
+  .forma { transition: transform 400ms ease-out; }
+  .forma:hover, .forma:focus-visible {
+    transform: translateX(40px) rotate(30deg) scale(8.1);
+    
+   transition:  5000ms ease-out;
+
+   animation: surgir 300ms ease-out 1; 
+  }
+}
+
+@keyframes surgir {
+  from { opacity: 0.5; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
