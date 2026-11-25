@@ -1,0 +1,13 @@
+#flex-linha { min-width: 500px; min-height: 500px;
+
+background-color:aqua;
+
+}
+
+#flex-linha > div{min-width: 500px; min-height: 500px;
+display: inline;
+background-color:red;
+
+padding: 100px;
+
+}

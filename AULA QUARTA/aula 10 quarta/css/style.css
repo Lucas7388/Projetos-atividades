@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #172033;
+  background-color: #f5f4fa;
+}
+main {
+  width: 100%;
+  padding: 16px;
+  background-color: #dbeafe;
+}
+h1{ font-size: 24px; }
+
+
+.materia {
+  margin: 0;
+  padding: 12px;
+  background-color: #ffffff;
+}
+
+@media(max-width:1200px){
+    main{background-color: #c7b833; } 
+
+
+@media(max-width:650px){
+    main{background-color: #305222; } 
+    body{ padding: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ab1cb8;}
+}
+
+}
+
+.cartao {
+    background-color: #ede9fe;
+    padding: 32px;
+  }
+  .titulo { font-size: 36px; }
+}
+
