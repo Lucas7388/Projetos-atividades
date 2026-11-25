@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário | Portal de Estudos</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <header>
+  <p>Portal de estudos</p>
+  <nav>
+    <a href="acesso.html" class="botao-branco">Acesso</a>
+    <a href="questionario.html" class="botao-roxo">Questionário</a>
+  </nav>
+</header>
+ <main>
+    <h1>Conte como você quer aprender</h1>
+    <p>Escolhas seus interesses e conte seu objetivo.</p>
+
+    <div class="formulario formulario-questionario">
+        <form class="cartoes cartao-questionario" id="questionario">
+             <h3>Questionário do estudante</h3>
+          <label for="participante">Nome do participante (obrigatório)</label>
+          <input type="text" id="participante" name="nome" placeholder="Ex: Ana Souza" minlength="2" maxlength="60" required>
+          <br>
+          <label for="area">Área de interesse (obrigatória)</label>
+          <select id="area" name="area" required> 
+            <option value="">Selecione uma área</option>
+            <option value="Desenvolvimento web">Desenvolvimento web</option>
+            <option value="Redes de computadores">Redes de computadores</option>  
+            <option value="Banco de dados">Banco de dados</option>        
+          </select>
+
+        <fieldset>
+          <legend>Experiência com HTML (obrigatória)</legend>
+          <p>
+            <input type="radio" id="experiencia-iniciante" name="experiencia" value="Iniciante" required>
+            <label for="experiencia-iniciante">Iniciante</label>
+            <br>
+          </p>
+          <p>
+            <input type="radio" id="experiencia-intermediario" name="experiencia" value="Intermediario" required>
+            <label for="experiencia-intermediario">Intermediário</label>
+            <br>
+          </p>
+          <p>
+            <input type="radio" id="experiencia-avancado" name="experiencia" value="Avancado" required>
+            <label for="experiencia-avancado">Avançado</label>
+            <br>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Recursos que deseja praticar (obrigatória)</legend>
+          <p>
+            <input type="checkbox" id="recurso-formularios" name="recursos" value="Formulários">
+            <label for="recurso-formularios">Formulários</label>
+            <br>
+          </p>
+          <p>
+            <input type="checkbox" id="recurso-flexbox" name="recursos" value="Flexbox">
+            <label for="recurso-flexbox">Flexbox</label>
+            <br>
+          </p>
+          <p>
+            <input type="checkbox" id="recurso-imagem" name="recursos" value="Imagens e links">
+            <label for="recurso-imagem">Imagens e links</label>
+            <br>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="horas">Horas de estudo por semana (1 a 20)</label>
+          <input type="number" id="horas" name="horas" min="1" max="20" step="1" value="3" required>
+          <br>
+        </p>
+
+        <p>
+          <label for="objetivo">Objetivo de aprendizagem (opcional)</label>
+          <textarea id="objetivo" name="objetivo" rows="4" maxlength="300" placeholder="Descreva o que pretende aprender."></textarea>
+          <br>
+          <small>Até 300 caracteres</small>
+        </p>
+
+        <button type="submit" class="botao-roxo">Enviar respostas</button>
+        <button type="reset" class="botao-branco">Limpar</button>
+        <button type="button" class="botao-branco" data-ajuda>Como preencher?</button>
+
+        <p id="questionario-resultado" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+
+      <br>
+     <small class="rodape">Atividade acadêmica · Use apenas dados fictícios</small>
+
+  </main>
+
+  <script src="interacao.js"></script>
+  </body>
+</html>

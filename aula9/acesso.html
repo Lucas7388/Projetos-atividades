@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso | Portal de Estudos</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-acesso">
+     <header>
+  <p>Portal de estudos</p>
+  <nav>
+    <a href="acesso.html" class="botao-roxo">Acesso</a>
+    <a href="questionario.html" class="botao-branco">Questionário</a>
+  </nav>
+</header>
+ <main>
+    <h1>BOAS VINDAS</h1>
+    <h2>Seu próximo passo começa aqui</h2>
+    <p>Entre ou crie  seu perfil para organizar seus estudos</p>
+
+    <div class="formulario">
+       <form class="cartoes" id="login">
+
+        <h3>ENTRAR</h3>
+
+        <label for="login-email">E-mail (obrigatório)</label>
+        <input type="email"  id="login-email" name="email" placeholder="ana@example.com" required>
+        <br>
+        <label for="login-senha">Senha (obrigatória)</label>
+        <input type="password" id="login-senha" name="senha" minlength="6" required>
+        <br>
+        <input type="checkbox" value="lembrar-email" name="lembrar-check" id="login-check">
+        <label for="login-check">Lembrar meu e-mail</label>
+        <br>
+        <button type="submit" class="botao-roxo">Entrar</button>
+        <button type="reset" class="botao-branco">Limpar</button>
+        <br>
+     
+      <p id="login-resultado" role="status" aria-live="polite"></p> 
+     </form>
+    
+       <form class="cartoes" id="cadastro">
+
+         <h3>Criar cadastro</h3>
+          <label for="cadastro-nome">Nome completo (obrigatório)</label>
+          <input type="text" id="cadastro-nome" name="nome" placeholder="Ex.: Ana Souza" minlength="2" maxlength="60" required>
+          <br>
+          <label for="cadastro-email">E-mail (obrigatório)</label>
+          <input type="email" id="cadastro-email" name="email" placeholder="ana@example.com" required>
+          <br>
+          <label for="cadastro-senha">Crie uma senha(obrigatória)</label>
+          <input type="password" id="cadastro-senha" name="senha" minlength="6" required>
+          <br>
+          <small>Use pelo menos 6 caracteres nesta simulação</small>
+          <br>
+          <label for="cadastro-curso">Curso (obrigatório)</label>
+          <select id="cadastro-curso" name="curso" required> 
+            <option value="">Selecione seu curso</option>
+            <option value="Análise e desenvolvimento de sistenas">Análise e desenvolvimento de sistemas</option>
+            <option value="Ciência da computação">Ciência da computação</option>  
+            <option value="Sistemas de informações">Sistemas de informações</option>        
+        </select>
+
+           <br>
+          <input type="checkbox" value="aceito" name="termos" id="cadastro-termo" required>
+          <label for="cadastro-termo">Concordo com os termos desta atividade (obrigatório)</label>
+          <br>
+           <button type="submit" class="botao-roxo">Cadastrar</button>
+           <button type="reset" class="botao-branco">Limpar</button>
+
+           <p id="cadastro-resultado" role="status" aria-live="polite"></p>
+       </form>
+
+    </div>
+     
+    <br>
+     <small class="rodape">Atividade acadêmica · Use apenas dados fictícios</small>
+
+  </main>
+
+  <script src="interacao.js"></script>
+  </body>
+</html>

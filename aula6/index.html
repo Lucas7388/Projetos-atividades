@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Programação de Interfaces - Aula 6</title>
+  <style>
+  
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+
+
+}
+
+td{
+border: 1px solid black;
+}
+
+
+.amarelo{
+background-color: gold;
+}
+
+.verde{
+background-color: rgb(0, 128, 90);
+
+}
+  </style>
+</head>
+<Body> <script type="text/javascript">
+
+
+
+document.write("<table>");
+
+
+    var cor = "amarelo";
+    var lista = ["la ele","bora bill", "receba"
+    
+for (var x = 1; x <= 10 ; x++){
+
+
+if(x % 2==0){ cor = "amarelo"}else{cor ="verde"}
+    document.write("<tr class='" + cor +"'>");
+
+
+    document.write("<td>Valor</td>");
+
+    document.write("<td>"+ x +"</td>");
+
+    document.write("<tr>");
+    }
+
+    document.write("</table>");
+    
+</script>
+</body>
+</html>

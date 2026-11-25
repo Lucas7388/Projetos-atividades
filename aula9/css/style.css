@@ -1,0 +1,361 @@
+body{
+    margin: 0;
+    padding: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #172033;
+    background-color:  #F5F4FA;
+}
+
+.cartoes{
+    background-color:  white;
+    margin: 0 80px;
+    padding: 24px;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 24px;
+    gap: 16px;
+}  
+ 
+
+header p{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+nav a{
+    margin-top: 20px;
+}
+
+h1{
+    font-size:26px;
+    color:#5B2AA8;
+    padding: 24px;
+    gap: 16px; 
+    margin: 0;
+}
+
+h2{
+    font-size: 26px;
+    color:#000000;
+    padding: 24px;
+    gap: 16px; 
+    margin: 0;
+}
+
+p{
+     padding: 24px;
+    gap: 16px; 
+    margin: 0;
+}
+
+h3{
+    font-size: 22px;
+}
+
+.botao-roxo{
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background-color: #5B2AA8;
+    color:white;
+    padding: 10px 30px;
+}
+
+.botao-branco{
+    border-radius: 8px;
+    border: 1px solid #5B2AA8;
+    background-color: #ffffff;
+    color:#5B2AA8;
+    padding: 10px 30px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+
+.rodape{
+    display: flex;
+    font-size: 14px;
+    background-color: white;
+    padding: 20px;
+}   
+
+main{
+        padding: 16px;
+}
+
+.formulario-questionario {
+    display: block;
+    width: 100%;
+}
+
+.cartao-questionario {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    flex: none;
+}
+
+.cartao-questionario h3 {
+    font-size: 18px;
+    margin: 0 0 18px;
+    color: #172033;
+}
+
+.cartao-questionario p {
+    padding: 0;
+    margin: 0 0 12px;
+}
+
+.cartao-questionario > label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #172033;
+}
+
+.cartao-questionario input[type="text"],
+.cartao-questionario input[type="number"],
+.cartao-questionario select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #9CA3AF;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.cartao-questionario textarea {
+    display: block;
+    width: 100%;
+    height: 96px;
+    padding: 10px;
+    border: 1px solid #9CA3AF;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.cartao-questionario fieldset {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 0 0 18px;
+    border: 1px solid #9CA3AF;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.cartao-questionario legend {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+.cartao-questionario fieldset p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 8px;
+}
+
+.cartao-questionario fieldset label {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.cartao-questionario input[type="radio"],
+.cartao-questionario input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.cartao-questionario small {
+    font-size: 12px;
+    color: #172033;
+}
+
+body.pagina-acesso {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 1280px;
+    box-sizing: border-box;
+    background-color: #F5F4FA;
+}
+
+.pagina-acesso header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    gap: 16px;
+    border-radius: 12px 12px 0 0;
+}
+
+.pagina-acesso header p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #172033;
+}
+
+.pagina-acesso nav {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.pagina-acesso nav a {
+    margin: 0;
+    text-decoration: none;
+}
+
+.pagina-acesso main {
+    padding: 24px 26px 38px;
+    background-color: #F5F4FA;
+}
+
+.pagina-acesso h1 {
+    font-size: 12px;
+    color: #5B2AA8;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0 0 8px;
+}
+
+.pagina-acesso h2 {
+    font-size: 26px;
+    color: #172033;
+    padding: 0;
+    margin: 0 0 8px;
+}
+
+.pagina-acesso main > p {
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+
+.pagina-acesso .formulario {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.pagina-acesso .formulario > form.cartoes {
+    background-color: white;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 20px;
+    flex: none;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.pagina-acesso .cartoes h3 {
+    font-size: 18px;
+    color: #172033;
+    margin: 0 0 18px;
+}
+
+.pagina-acesso .cartoes label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #172033;
+}
+
+.pagina-acesso .cartoes input[type="text"],
+.pagina-acesso .cartoes input[type="email"],
+.pagina-acesso .cartoes input[type="password"],
+.pagina-acesso .cartoes select {
+    display: block;
+    width: 100%;
+    padding: 11px 10px;
+    margin-bottom: 14px;
+    border: 1px solid #9CA3AF;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.pagina-acesso .cartoes input[type="checkbox"] {
+    width: auto;
+    margin: 0 6px 0 3px;
+    vertical-align: middle;
+}
+
+.pagina-acesso #login-check + label,
+.pagina-acesso #cadastro-termo + label {
+    display: inline;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+}
+
+.pagina-acesso .cartoes button {
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.pagina-acesso .cartoes small {
+    font-size: 12px;
+    color: #172033;
+}
+
+.pagina-acesso .cartoes p[id$="-resultado"] {
+    padding: 0;
+    margin-top: 12px;
+    white-space: pre-line;
+    font-size: 13px;
+}
+
+.pagina-acesso .rodape {
+    display: block;
+    background-color: white;
+    padding: 16px;
+    font-size: 12px;
+}
+
+@media (max-width: 650px) {
+    .pagina-acesso .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-acesso header {
+        flex-wrap: wrap;
+    }
+
+    .pagina-acesso main {
+        padding: 20px 14px;
+    }
+}
+
