@@ -1,0 +1,100 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #e6e8ec;
+  background: #000000;
+}
+.conteudo { padding: 32px; }
+h1, h2, h3, p { margin-top: 0; 
+color: #010713;
+}
+h4, h5 { margin-top: 0;  
+font-family: Arial, sans-serif;
+line-height: 1.6;
+font-size: 18px;}
+img { max-width: 100%; height: auto; }
+
+.cabecalho {
+  padding: 24px 32px;
+  background: #240457;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.marca { margin: 0; font-size: 24px; font-weight: bold; }
+.menu a { color: rgb(249, 250, 250); }
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px 32px;
+  background: #240457;
+  color: white;;
+  color: white;
+}
+.rodape h6 { margin: 0; font-size: 24px; font-weight: bold;  }
+.rodape a { color: white; }
+
+.apresentacao {
+  padding: 24px;
+  background: #eaf8fb;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.texto-apresentacao { width: 420px; max-width: 100%; }
+.foto-apresentacao { width: 360px; }
+
+.cartao {
+  width: 280px;
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid #dce2ea;
+  border-radius: 12px;
+  background: white;
+}
+.cartao img { width: 100%; height: auto; }
+.cartao h2 { margin-top: 16px; }
+
+.lista-lugares {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+.cartao { flex-shrink: 0; }
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 24px;
+  background: #eaf8fb;
+  border-radius: 12px;
+}
